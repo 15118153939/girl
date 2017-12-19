@@ -44,3 +44,10 @@ public class GirlService {
     }
 }
 ```
+Controller部分代码
+```
+    @PostMapping(value = "/girls/two")
+    public void girlTwo(){
+        girlService.insertTwo();
+    }
+```
