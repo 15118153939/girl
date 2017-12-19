@@ -14,6 +14,9 @@ import java.util.List;
 public class GirlController {
 
     @Autowired
+    private GirlService girlService;
+
+    @Autowired
     private GirlRepository girlRepository;
     @GetMapping(value = "girls")
     public List<Girl> girlList(){
@@ -58,5 +61,10 @@ public class GirlController {
     public List<Girl> girlListByAge(@PathVariable("age") Integer age){
         return girlRepository.findByAge(age);
 
+    }
+
+    @PostMapping(value = "/girls/two")
+    public void girlTwo(){
+        girlService.insertTwo();
     }
 }
