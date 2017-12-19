@@ -3,5 +3,5 @@ server:
   context-path: /girl
 girl:
   name: 王生产
-  age: 18
+  age: 22
   cupSize: C
