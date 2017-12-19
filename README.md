@@ -133,6 +133,8 @@ public interface GirlRepository extends JpaRepository<Girl,Integer> {
 
 ```
 Controller业务比较简单，就不分层了，后续继续分层处理：
+restful设计：
+![](https://github.com/15118153939/girl/blob/jpa-restful-controller/img/restful/restful.png)
 ```
 package com.lv.girl;
 
