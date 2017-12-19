@@ -51,3 +51,4 @@ public class HelloController {
 
 ```
 运行结果：
+![运行结果](https://github.com/15118153939/girl/blob/springBoot-configuration/img/properties/p1.png)
