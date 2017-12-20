@@ -1,8 +1,9 @@
-package com.lv.girl;
+package com.lv.girl.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 /**
  * @Author lvmingliang_glut@163.com
@@ -17,6 +18,7 @@ public class Girl {
     private Integer id;
     private String name;
     private String cupSize;
+    @Min(value = 18,message = "未成年少女不准如内")
     private Integer age;
     private double money;
 
@@ -70,6 +72,7 @@ public class Girl {
                 ", name='" + name + '\'' +
                 ", cupSize='" + cupSize + '\'' +
                 ", age=" + age +
+                ", money=" + money +
                 '}';
     }
 }

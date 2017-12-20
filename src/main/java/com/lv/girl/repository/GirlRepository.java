@@ -1,5 +1,6 @@
-package com.lv.girl;
+package com.lv.girl.repository;
 
+import com.lv.girl.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
